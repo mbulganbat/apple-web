@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.header-menu {
+  width: 1920px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  background-color: #0000d0cc 80%;
+  width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.donating {
+  width: 1920px;
+}
+
+.background1 {
+  background-image: url(img/Figure.png);
+  width: 100vh;
+  height: 692px;
+}
