@@ -9,21 +9,267 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
 }
 .nav {
-  background-color: #0000d0cc 80%;
+  background-color: #f5f5f7;
   width: 1920px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
+  position: fixed;
 }
-.donating {
+.banner {
   width: 1920px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.background1 {
+#background-1 {
   background-image: url(img/Figure.png);
-  width: 100vh;
+}
+#background-2 {
+  background-image: url(img/back-2.png);
+}
+#background-3 {
+  background-image: url(img/back-3.png);
+}
+
+/* background-1 */
+
+.background {
+  width: 1920px;
   height: 692px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-1 {
+  height: 407px;
+  height: 172px;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 55px;
+}
+.title-1 h2 {
+  font-size: 52px;
+  font-family: inter;
+  color: #f5f5f7;
+}
+.title-1 p {
+  font-size: 24px;
+  font-family: Inter;
+  color: #f5f5f7;
+}
+
+.buttons {
+  width: 207px;
+  height: 44px;
+}
+
+.button-pri {
+  background-color: #0071e3;
+  border-radius: 999px;
+  width: 123px;
+  height: 44px;
+  border: none;
+  color: #ffffff;
+}
+
+.button-sec {
+  background-color: transparent;
+  border-radius: 999px;
+  width: 68px;
+  height: 44px;
+  border: 1px solid #2997ff;
+  color: #2997ff;
+}
+
+/* background-2 */
+
+.button-pri-2 {
+  background-color: #ffffff;
+  border-radius: 999px;
+  width: 123px;
+  height: 44px;
+  border: none;
+  color: #000000;
+}
+
+.button-sec-2 {
+  background-color: transparent;
+  border-radius: 999px;
+  width: 68px;
+  height: 44px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* background-3 */
+
+.background3 {
+  width: 1920px;
+  height: 692px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.title-3 {
+  height: 407px;
+  height: 172px;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 82px;
+}
+.title-3 h2 {
+  font-size: 52px;
+  font-family: inter;
+  color: #000000;
+}
+.title-3 p {
+  font-size: 24px;
+  font-family: Inter;
+  color: #000000;
+}
+
+.buttons {
+  width: 207px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-pri-3 {
+  background-color: #0071e3;
+  border-radius: 999px;
+  width: 114px;
+  height: 44px;
+  border: none;
+  color: #ffffff;
+}
+
+/* Porduct heseg */
+#porduct-background-1 {
+  background-image: url(img/porduct-back1.png);
+}
+#porduct-background-2 {
+  background-image: url(img/porduct-back2.png);
+}
+#porduct-background-3 {
+  background-image: url(img/porduct-back3.png);
+}
+#porduct-background-4 {
+  background-image: url(img/porduct-back4.png);
+}
+#porduct-background-5 {
+  background-image: url(img/porduct-back5.png);
+}
+#porduct-background-6 {
+  background-image: url(img/porduct-back6.png);
+}
+
+.porduct-container {
+  width: 1920px;
+  height: 1764px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.porduct {
+  width: 942px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.porduct-title {
+  width: 322px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 58px;
+}
+.porduct-title img {
+  width: 433px;
+  height: 33px;
+}
+
+.porduct-sub {
+  font-size: 18px;
+  font-family: inter;
+  font-style: regular;
+  text-align: center;
+}
+
+.apple-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.apple-icon h2 {
+  font-size: 32px;
+  font-family: inter;
+  font-style: bold;
+}
+.porduct-title h3 {
+  font-size: 15px;
+  font-family: inter;
+  font-style: bold;
+}
+
+.apple-icon img {
+  width: 26px;
+  height: 32px;
+  margin-top: -5px;
+}
+
+.porduct-bottom {
+  width: 942px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.porduct-title-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 58px;
+}
+
+.porduct-title-bottom h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: inter;
+  font-style: regular;
+}
+.porduct-title-bottom p {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: inter;
+  font-style: regular;
+}
+.porduct-title h2 {
+  color: #000000;
+  font-size: 36px;
+  font-family: inter;
+  font-style: regular;
+  text-align: center;
 }
