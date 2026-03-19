@@ -398,12 +398,30 @@
 
 /* suuliiin heseg */
 
-#item-1 {
+/* slider ni bg heseg */
+
+#bg-1 {
   background-color: rgb(4, 87, 112);
 }
-#item-2 {
+#bg-2 {
   background-color: #eae6e1;
 }
+#bg-8 {
+  background-color: #d66910;
+}
+#bg-10 {
+  background-color: rgba(44, 4, 92, 0.622);
+}
+
+/* boxn dotorh zurag */
+
+#item-1 {
+  background-image: url(img/1.jpg);
+}
+#item-2 {
+  background-image: url(img/2.jpg);
+}
+
 #item-3 {
   background-image: url(img/3.jpg);
 }
@@ -438,10 +456,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  /* animation-name: slider;
+  animation-name: slider;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 20s; */
+  animation-duration: 20s;
 }
 
 .slider-item {
@@ -465,7 +483,6 @@
   }
 }
 .slider-image-small {
-  background-image: url(./img/1.jpg);
   background-size: contain;
   width: 196px;
   height: 196px;
@@ -490,7 +507,16 @@
   filter: brightness(50%);
 }
 
-.slider-item:hover button {
+.slider-item:hover .slider-button button {
   opacity: 1;
-  filter: brightness(100%);
+  margin-top: 0;
+  transition: all 0.3s ease;
+}
+
+.slider-caption {
+  left: 15px;
+  bottom: 30px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
 }
