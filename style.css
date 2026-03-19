@@ -205,6 +205,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-position: center;
 }
 .porduct-title {
   width: 322px;
@@ -212,7 +213,7 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  margin-top: 58px;
+  padding: 58px;
 }
 .porduct-title img {
   width: 433px;
@@ -268,6 +269,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: end;
+  background-position: center;
 }
 .porduct-title-bottom {
   display: flex;
@@ -392,4 +394,103 @@
   height: 8px;
   border-radius: 50%;
   background-color: #0000006b;
+}
+
+/* suuliiin heseg */
+
+#item-1 {
+  background-color: rgb(4, 87, 112);
+}
+#item-2 {
+  background-color: #eae6e1;
+}
+#item-3 {
+  background-image: url(img/3.jpg);
+}
+#item-4 {
+  background-image: url(img/4.jpg);
+}
+#item-5 {
+  background-image: url(img/5.jpg);
+}
+#item-6 {
+  background-image: url(img/6.jpg);
+}
+#item-7 {
+  background-image: url(img/7.jpg);
+}
+#item-8 {
+  background-image: url(img/8.jpg);
+}
+#item-9 {
+  background-image: url(img/9.jpg);
+}
+#item-10 {
+  background-image: url(img/10.jpg);
+}
+
+.slider-container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* animation-name: slider;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 20s; */
+}
+
+.slider-item {
+  min-width: 417px;
+  height: 236px;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  column-gap: 15px;
+  font-weight: bold;
+  align-items: center;
+  color: var(--color);
+}
+
+@keyframes slider {
+  from {
+    transform: translate(100vw);
+  }
+  to {
+    transform: translate(-4170px);
+  }
+}
+.slider-image-small {
+  background-image: url(./img/1.jpg);
+  background-size: contain;
+  width: 196px;
+  height: 196px;
+  overflow: hidden;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.slider-button button {
+  width: 100px;
+  height: 30px;
+  border-radius: 999px;
+  border: none;
+  background-color: white;
+  position: absolute;
+  right: 165px;
+  bottom: 100px;
+  /* display: none; */
+  opacity: 0;
+}
+.slider:hover .slider-item {
+  filter: brightness(50%);
+}
+
+.slider-item:hover button {
+  opacity: 1;
+  filter: brightness(100%);
 }
