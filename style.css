@@ -672,10 +672,10 @@
   font-family: inter;
   font-size: 14px;
   overflow: scroll;
-  scroll-behavior: smooth;
   scrollbar-width: none;
   padding-inline: 120px;
   padding-left: 140px;
+  flex-shrink: 0;
 }
 
 .porduct-card img {
@@ -696,31 +696,31 @@
 }
 
 #card-3 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card3.jpeg);
 }
 #card-4 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card4.jpeg);
 }
 #card-5 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card5.jpeg);
 }
 #card-6 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card6.jpeg);
 }
 #card-7 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card7.jpeg);
 }
 #card-8 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card8.jpeg);
 }
 #card-9 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card9.jpeg);
 }
 #card-10 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card10.jpeg);
 }
 #card-11 {
-  background-image: url(./img/card-1.jpeg);
+  background-image: url(./img/card11.jpeg);
 }
 
 .section-1 {
@@ -732,13 +732,20 @@
   align-items: center;
   gap: 12px;
 }
+.latets-title p {
+  font-size: 24px;
+  color: #6e6e73;
+  font-weight: 700;
+  font-family: inter;
+}
 
 .latest-porduct-list {
-  width: 100vw;
   height: 550px;
   display: flex;
   gap: 12px;
   background-color: #f5f5f7;
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
 .latets-porduct-card {
@@ -754,7 +761,6 @@
   row-gap: 12px;
   border-radius: 18px;
   flex-direction: column;
-  scroll-snap-align: start;
   box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
 }
 .white {
