@@ -21,6 +21,7 @@
   gap: 24px;
   position: fixed;
 }
+
 .banner {
   width: 100vw;
   height: 52px;
@@ -68,6 +69,25 @@
   color: #f5f5f7;
 }
 .title-1 p {
+  font-size: 24px;
+  font-family: Inter;
+  color: #f5f5f7;
+}
+
+.title-2 {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 55px;
+}
+.title-2 h2 {
+  font-size: 52px;
+  font-family: inter;
+  color: #f5f5f7;
+}
+.title-2 p {
   font-size: 24px;
   font-family: Inter;
   color: #f5f5f7;
@@ -341,23 +361,17 @@
 }
 
 .scroll-item {
-  position: relative;
+  padding: 66px;
+  background-position: center;
+  background-size: cover;
   min-width: 1250px;
   height: 668px;
-  background-size: cover;
-  margin-top: 12px;
-}
-.info {
-  gap: 12px;
   display: flex;
-  align-items: center;
-  left: 47px;
-  bottom: 38px;
-  position: absolute;
-  font-size: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.info button {
+.scroll-item button {
   width: 133px;
   height: 44px;
   border-radius: 999px;
@@ -365,18 +379,26 @@
   border: none;
   font-size: 20px;
 }
-.info h2 {
+.info {
+  width: 600px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scroll-item h2 {
   font-size: 20px;
   font-family: inter;
   font-style: bold;
-  color: white;
+  color: rgb(226, 225, 225);
 }
 
-.info p {
+.scroll-item p {
   font-size: 20px;
   font-family: inter;
   font-style: regular;
-  color: white;
+  color: rgb(226, 225, 225);
 }
 .bullets {
   display: flex;
@@ -446,7 +468,7 @@
 }
 
 .slider-container {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -457,7 +479,7 @@
   animation-name: slider;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 40s;
+  animation-duration: 10s;
 }
 
 .slider-item {
@@ -469,15 +491,14 @@
   column-gap: 15px;
   font-weight: bold;
   align-items: center;
-  color: var(--color);
 }
 
 @keyframes slider {
   from {
-    transform: translate(100vw);
+    transform: translate(0%);
   }
   to {
-    transform: translate(-5000px);
+    transform: translate(-100vw);
   }
 }
 .slider-image-small {
@@ -498,16 +519,22 @@
   position: absolute;
   right: 165px;
   bottom: 100px;
-  /* display: none; */
   opacity: 0;
+}
+.slider:hover {
+  animation-play-state: paused;
+  filter: grayscale (1);
 }
 .slider:hover .slider-item {
   filter: brightness(50%);
 }
 
+.slider .slider-item:hover {
+  filter: grayscale(0);
+}
+
 .slider-item:hover .slider-button button {
   opacity: 1;
-  margin-top: 0;
   transition: all 0.3s ease;
 }
 
@@ -517,70 +544,6 @@
   color: white;
   font-weight: bold;
   position: absolute;
-}
-
-/* responsibility heseg */
-
-@media (max-width: 700px) {
-}
-@media (max-width: 430px) {
-  .header-menu {
-    width: 100vw;
-    height: 44px;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    gap: 12px;
-  }
-  .nav {
-    background-color: #f5f5f7;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    position: fixed;
-  }
-  .banner {
-    width: 100vw;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-  }
-
-  #background-1 {
-    background-image: url(img/bosoo.jpg);
-  }
-  .background {
-    width: 100vw;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    justify-content: flex-end;
-  }
-  .title-1 {
-    gap: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 58px;
-  }
-  .title-1 h2 {
-    font-size: 30px;
-    font-family: inter;
-    color: #f5f5f7;
-  }
-  .title-1 p {
-    font-size: 18px;
-    font-family: Inter;
-    color: #f5f5f7;
-  }
 }
 
 /* store huudasni css */
@@ -676,6 +639,7 @@
   padding-inline: 120px;
   padding-left: 140px;
   flex-shrink: 0;
+  padding-bottom: 60px;
 }
 
 .porduct-card img {
@@ -765,4 +729,170 @@
 }
 .white {
   color: white;
+}
+
+/* responsibility heseg */
+
+@media (max-width: 1000px) {
+  .header-menu {
+    height: 44px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 12px;
+  }
+  .item p {
+    display: none;
+  }
+  .nav {
+    width: 100vw;
+    justify-content: space-evenly;
+    gap: 0px;
+    position: fixed;
+  }
+  .banner {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .scroll-item {
+    min-width: 689px;
+    height: 368px;
+    padding: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .header-menu {
+    height: 44px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 12px;
+  }
+  .item p {
+    display: none;
+  }
+  .nav {
+    width: 100vw;
+    justify-content: space-evenly;
+    gap: 0px;
+    position: fixed;
+  }
+  .banner {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #background-1 {
+    background-image: url(img/bosoo.jpg);
+  }
+  #background-2 {
+    background-image: url(img/bosoo2.jpg);
+  }
+  .background {
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    justify-content: flex-end;
+  }
+  .title-1 h2 {
+    font-size: 30px;
+  }
+  .title-1 p {
+    font-size: 18px;
+  }
+  .title-2 {
+    margin-bottom: 285px;
+  }
+
+  .title-2 h2 {
+    font-size: 30px;
+  }
+  .title-2 {
+    font-size: 18px;
+  }
+  .background3 {
+    display: none;
+  }
+  .porduct-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .porduct {
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+  }
+  .porduct-title {
+    justify-content: center;
+  }
+  .porduct-bottom {
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+    background-size: cover;
+  }
+  #porduct-background-3 {
+    background-image: url(img/bosoo\ iwatch.jpg);
+  }
+
+  .scroll-item {
+    min-width: 274px;
+    height: 495px;
+    padding: 12px;
+  }
+
+  .scroll-item {
+    background-position: center;
+    background-size: cover;
+    min-width: 274px;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .scroll-item button {
+    width: 130px;
+    height: 44px;
+    border-radius: 999px;
+    color: #000000;
+    border: none;
+    font-size: 14px;
+  }
+  .info {
+    width: 246px;
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .scroll-item h2 {
+    font-size: 16px;
+    font-family: inter;
+    font-style: bold;
+    color: rgb(226, 225, 225);
+  }
+
+  .scroll-item p {
+    font-size: 14px;
+    font-family: inter;
+    font-style: regular;
+    color: rgb(226, 225, 225);
+  }
 }
