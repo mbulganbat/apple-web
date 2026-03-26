@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  font-family: inter;
 }
 
 .header-menu {
@@ -20,6 +21,10 @@
   justify-content: center;
   gap: 24px;
   position: fixed;
+}
+
+.menu-bar {
+  display: none;
 }
 
 .banner {
@@ -493,6 +498,15 @@
   align-items: center;
 }
 
+.jijig-p {
+  color: #6e6e73;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 133.333% */
+}
+
 @keyframes slider {
   from {
     transform: translate(0%);
@@ -569,10 +583,12 @@
   padding-inline: 120px;
   padding-left: 140px;
 }
+
 .gradient {
   width: 100%;
   height: 20px;
 }
+
 .gradient img {
   width: 100vw;
   height: 20px;
@@ -650,6 +666,7 @@
 .latest-porduct-section {
   width: 100vw;
   height: 553px;
+  margin-bottom: 37px;
 }
 
 #card-1 {
@@ -690,6 +707,9 @@
 .section-1 {
   padding-left: 140px;
   background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .latets-title {
   display: flex;
@@ -731,7 +751,196 @@
   color: white;
 }
 
-/* responsibility heseg */
+/* porduct listni 2 dahi heseg */
+
+#airpods-img-1 {
+  background-image: url(./img/2.1.png);
+}
+
+.latest-porduct-list-2 {
+  height: 550px;
+  display: flex;
+  gap: 12px;
+  background-color: #f5f5f7;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.latets-porduct-card-2 {
+  width: 323px;
+  height: 500px;
+  border-radius: 18px;
+  padding: 71px 28px 32px 28px;
+  display: flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  row-gap: 12px;
+  border-radius: 18px;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+  background-color: white;
+  align-items: center;
+}
+
+.por-img img {
+  width: 230px;
+  height: 230px;
+}
+
+.color {
+  width: 253px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.color img {
+  width: 12px;
+  height: 12px;
+}
+.sub-des {
+  width: 253px;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 6px;
+}
+.sub-des p {
+  color: #b64400;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 133.333% */
+}
+.sub-des h2 {
+  color: #1d1d1f;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+}
+
+.sub-price {
+  width: 253px;
+  margin-top: 32px;
+}
+
+.box4 {
+  width: 646px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  cursor: pointer;
+  row-gap: 12px;
+  flex-direction: column;
+}
+
+.box1 {
+  width: 313px;
+  height: 244px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 p {
+  width: 238px;
+  height: 84px;
+  color: #1d1d1f;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 127.273% */
+}
+
+#section-4-card-1 {
+  background-image: url(./img/store-card.jpg);
+}
+#section-4-card-2 {
+  background-image: url(./img/trade.jpg);
+}
+#section-4-card-3 {
+  background-image: url(./img/holiday.jpg);
+}
+
+#section-5-card-1 {
+  background-image: url(./img/sec5/fe1e7ece87047c95faa8a68f17e8867914317976.jpg);
+}
+#section-5-card-2 {
+  background-image: url(./img/sec5/store-card-50-holiday-apple-tv-202411.png);
+}
+#section-5-card-3 {
+  background-image: url(./img/sec5/store-card-50-subscriptions-202108_GEO_US.png);
+}
+#section-5-card-4 {
+  background-image: url(./img/sec5/4c93c049459dcec6247af385b50ac485e92e5a45.jpg);
+}
+
+#section-6-card-1 {
+  background-image: url(./img/sec6/57e6bdca2b0f233f809fe57ada1ba8354e54e4b4.jpg);
+}
+#section-6-card-2 {
+  background-image: url(./img/sec6/c29a91c005069048c5e1b877cf3142fa2fab6067.jpg);
+}
+#section-6-card-3 {
+  background-image: url(./img/sec6/60a49ef1a49579aa398f78daa8ab814a87b543dc.jpg);
+}
+#section-6-card-4 {
+  background-image: url(./img/sec6/iphone-card-40-business-202409.png);
+}
+#section-6-card-5 {
+  background-image: url(./img/sec6/9511d82e0fa4f14f3d23b485ab3928f9d27a5012.jpg);
+}
+
+/* footer link heseg */
+
+.links-heseg {
+  display: flex;
+  width: 100vw;
+  padding: 0 140px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background-color: #f5f5f7;
+  height: 120px;
+}
+
+.links-heseg h2 {
+  color: #1d1d1f;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 123.077% */
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+.links button {
+  width: 145px;
+  height: 45px;
+  border-radius: 999px;
+  border: 1px solid #1d1d1f;
+
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
 
 @media (max-width: 1000px) {
   .header-menu {
@@ -741,6 +950,10 @@
     align-items: center;
     gap: 12px;
   }
+  .menu-bar {
+    display: block;
+  }
+
   .item p {
     display: none;
   }
@@ -782,6 +995,11 @@
     gap: 0px;
     position: fixed;
   }
+
+  .menu-bar {
+    display: block;
+  }
+
   .banner {
     height: 52px;
     display: flex;
